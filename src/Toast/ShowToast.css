@@ -1,0 +1,42 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+.container {
+  margin: 5rem 2rem;
+  padding: 2rem 3rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.35rem;
+}
+
+.container button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  background-color: #ff4f6c;
+  color: white;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.container label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  background-color: #84f1c9;
+  color: #1b7052;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.6rem;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 25%;
+  border-radius: 0.35rem;
+  z-index: 5;
+}
+
+.container label .icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=ShowToast.css.map */

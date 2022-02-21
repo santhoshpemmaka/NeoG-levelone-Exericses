@@ -1,0 +1,54 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+.container {
+  background-color: blue;
+  margin: 1rem;
+}
+
+.container .image-responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45rem;
+  width: 60%;
+  margin: 6rem auto;
+  -webkit-box-shadow: 3px 3px 4px 4px #c4c4d1;
+          box-shadow: 3px 3px 4px 4px #c4c4d1;
+  border-radius: 3rem;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container .image-responsive:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.container .image-responsive img {
+  width: 100%;
+  height: auto;
+  border-radius: 3rem;
+}
+
+.container .container-desc {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .container-desc span {
+  margin-right: 2rem;
+  color: primarytext-color;
+}
+/*# sourceMappingURL=DarkMode.css.map */

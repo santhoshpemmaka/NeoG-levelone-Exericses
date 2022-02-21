@@ -1,0 +1,21 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+.listingList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto;
+  width: 70%;
+}
+
+.listingList span {
+  font-size: 20px;
+  margin-right: 3rem;
+  width: 30%;
+}
+
+.listingList .like-icon {
+  font-size: 20px;
+  color: #e942a9;
+  cursor: pointer;
+}
+/*# sourceMappingURL=LikeList.css.map */

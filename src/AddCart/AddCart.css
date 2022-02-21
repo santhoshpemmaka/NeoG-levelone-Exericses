@@ -1,0 +1,34 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
+
+:root{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.addcartIcon{
+    margin: 4rem;
+    position: relative;
+    cursor: pointer;
+}
+.shop-icon{
+    font-size: 3rem;
+    color: #ff4f6c;
+}
+.addcart-display{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #c29393;
+    display: flex;
+    font-size: 1.6rem;
+    color: #3e4152;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    top: -1.25rem;
+    left: 2rem;
+    border: 2px solid #e6e6e6;
+    
+}

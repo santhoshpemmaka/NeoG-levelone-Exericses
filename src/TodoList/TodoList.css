@@ -1,0 +1,66 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+.todo-container {
+  width: 60%;
+  margin: 5rem auto;
+  color: #3e4152;
+}
+
+.todo-container h2 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.todo-container .todo-input {
+  margin: 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-container .todo-input input {
+  padding: 1rem 0.5rem;
+  width: 80%;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+.todo-container .todo-input button {
+  width: 20%;
+  padding: 1rem 0.5rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #ff4f6c;
+  margin-left: 2rem;
+  border-radius: 0.35rem;
+  border: 2px solid #e6e6e6;
+}
+
+.todo-container .todo-list {
+  margin: 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  min-height: 4rem;
+  background-color: #ece9e9;
+  margin-top: 0.5rem;
+}
+
+.todo-container .todo-list .icon {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=TodoList.css.map */

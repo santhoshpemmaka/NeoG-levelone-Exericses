@@ -1,0 +1,8 @@
+.container{
+    margin: 3rem;
+}
+.container a{
+    text-decoration: none;
+    margin: 1rem 0;
+    display: flex;
+}
