@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import setupMockServer from "./Mock.server";
+
 
 ReactDOM.render(
 	<React.StrictMode>
