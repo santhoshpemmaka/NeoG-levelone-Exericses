@@ -1,0 +1,29 @@
+.address{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.address input{
+    width: 30rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    margin: 1rem 2rem;
+}
+button{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+}
+.displayAddress{
+    font-size: 1.6rem;
+    width: calc(100% - 20%);
+    margin: 0.5rem auto;
+    padding: 1rem 1.5rem;
+    border: 2px solid #e46565;
+    border-radius: 0.5rem;
+}
+.display-item label{
+    margin: 0 3rem;
+    padding: 0.5rem 3rem;
+}

@@ -24,7 +24,12 @@ export default function App() {
 	const btnHandler = async () => {
 		try {
 			setdataStatus((prev) => "Saving to server...");
-			const response = await axios.post("/api/addresses", "santhosh");
+			const response = await axios.post("/api/addresses", {
+				addresses: {
+					id: Math.random() * 100,
+					name: "santhosh",
+				},
+			});
 			console.log(response);
 		} catch (err) {
 			setdataStatus("Couldn't save data.");
