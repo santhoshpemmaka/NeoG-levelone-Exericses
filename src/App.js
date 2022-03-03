@@ -1,8 +1,9 @@
 import "./App.css";
+import Navbar from "./Navbar";
 function App() {
 	return (
 		<div className='App'>
-			<h1>NeoG Level One Exericses</h1>
+			<Navbar />
 		</div>
 	);
 }
