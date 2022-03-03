@@ -1,0 +1,32 @@
+h1,
+p {
+  font-family: Lato;
+}
+.container {
+  margin: 1rem;
+  padding: 2rem 1rem;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.panel-light {
+  background-color: white;
+  color: #222;
+}
+.panel-dark {
+  background-color: #222;
+  color: white;
+}
+.button {
+  margin: 0 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #e6e6e6;
+  font-weight: bold;
+}
+.button-light {
+  background-color: white;
+  color: #222;
+}
+.button-dark {
+  background-color: #222;
+  color: white;
+}
