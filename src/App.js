@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 // import Button from "./Button";
 // import CharacterCounter from "./CharacterCounter";
 // import PasswordMatch from "./PasswordMatch";
@@ -14,13 +14,14 @@ import "./App.css";
 // import SwitchTabs1 from "./SwitchTabs1/SwitchTabs1";
 // import ShowToast from "./Toast/ShowToast";
 // import TodoList from "./TodoList/TodoList";
-import DarkMode from "./DarkMode/DarkMode";
+// import DarkMode from "./DarkMode/DarkMode";
 // import UseEffect from "./Pratice/UseEffect";
+import PraticeSaas from "./PraticeSaas/PraticeSaas";
 
 function App() {
 	return (
 		<div className='App'>
-			<DarkMode />
+			<PraticeSaas />
 		</div>
 	);
 }
