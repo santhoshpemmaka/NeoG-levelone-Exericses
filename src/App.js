@@ -7,12 +7,13 @@ const App = () => {
 		setTheme((prev) => (prev === "light" ? "dark" : "light"));
 	};
 	console.log(theme == "light");
+	
 	return (
 		<div>
 			<div
-				className={
-					"container " + (theme == "light" ? "panel-light" : "panel-dark")
-				}>
+				className={`container ${
+					theme == "light" ? "panel-light" : "panel-dark"
+				}`}>
 				<h1>Welcome </h1>
 				<div>
 					<button
