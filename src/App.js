@@ -1,98 +1,16 @@
-import React, {useReducer, useState} from "react";
+import React from "react";
 import "./App.css";
-import faker from "faker";
-
-faker.seed(123);
-
-const data = [...Array(50)].map((item) => ({
-	id: faker.random.uuid(),
-	name: faker.commerce.productName(),
-	image: faker.random.image(),
-	price: faker.commerce.price(),
-	material: faker.commerce.productMaterial(),
-	brand: faker.lorem.word(),
-	inStock: faker.random.boolean(),
-	fastDelivery: faker.random.boolean(),
-	ratings: faker.random.arrayElement([1, 2, 3, 4, 5]),
-	offer: faker.random.arrayElement([
-		"Save 50",
-		"70% bonanza",
-		"Republic Day Sale",
-	]),
-	idealFor: faker.random.arrayElement([
-		"Men",
-		"Women",
-		"Girl",
-		"Boy",
-		"Senior",
-	]),
-	level: faker.random.arrayElement([
-		"beginner",
-		"amateur",
-		"intermediate",
-		"advanced",
-		"professional",
-	]),
-	color: faker.commerce.color(),
-}));
+import DemoData from "./FakerData";
+import {useCard} from "./CardContext";
 
 export default function App() {
-	const useReducerFun = (state, action) => {
-		switch (action.type) {
-			case "SORT":
-				return {
-					...state,
-					sortBy: action.payload,
-				};
-			case "TOGGLE_INVENTORY":
-				return {
-					...state,
-					showInventoryAll: !state.showInventoryAll,
-				};
-			case "TOGGLE_DELIVERY": {
-				return {
-					...state,
-					showFastDeliveryOnly: !state.showFastDeliveryOnly,
-				};
-			}
-			case "PRICE": {
-				return {
-					...state,
-					price: action.payload,
-				};
-			}
-			case "RESET": {
-				return {
-					...state,
-					sortBy: null,
-					showInventoryAll: true,
-					showFastDeliveryOnly: false,
-					price: 0,
-				};
-			}
-			case "CARD": {
-				return {
-					...state,
-					carditems: [...state.carditems, action.payload],
-				};
-			}
-			default: {
-				return state;
-			}
-		}
-	};
-	const [state, dispatch] = useReducer(useReducerFun, {
-		sortBy: null,
-		showInventoryAll: true,
-		showFastDeliveryOnly: false,
-		carditems: [],
-		price: 0,
-	});
+	const [data] = DemoData();
+	const {state, dispatch} = useCard();
 	const getSortData = (productList, sortBy) => {
 		if (sortBy && sortBy === "PRICE_HIGH_LOW") {
 			return productList.sort((a, b) => b["price"] - a["price"]);
 		}
-		if (sortBy && sortBy == "PRICE_LOW_HIGH") {
+		if (sortBy && sortBy === "PRICE_LOW_HIGH") {
 			return productList.sort((a, b) => a["price"] - b["price"]);
 		}
 		return productList;
@@ -117,7 +35,6 @@ export default function App() {
 		state.showFastDeliveryOnly,
 		state.price
 	);
-	console.log(state);
 
 	return (
 		<div className='container'>
