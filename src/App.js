@@ -1,9 +1,8 @@
 import "./App.css";
-import MainPage from "./Components/MainPage";
 function App() {
 	return (
 		<div className='App'>
-			<MainPage />
+			<h1>NeoG Level One Exericses</h1>
 		</div>
 	);
 }
