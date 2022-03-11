@@ -35,12 +35,16 @@ const HeaderMain = () => {
 												<i className='fas fa-user-alt user-icon'></i>
 											</span>
 										</a>
-										<i class='fas fa-times close-icon' onClick={navHandler}></i>
+										<i
+											className='fas fa-times close-icon'
+											onClick={navHandler}></i>
 									</li>
 									{navItems &&
 										navItems.length > 0 &&
 										navItems.map((item) => (
-											<li className='list-inline-item'>{item.text}</li>
+											<li key={item.text} className='list-inline-item'>
+												{item.text}
+											</li>
 										))}
 								</ul>
 							</div>
