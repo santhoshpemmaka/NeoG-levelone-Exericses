@@ -25,6 +25,7 @@
 	"main   main   main   main"
 	"main   main   main   main"
 	"footer footer footer footer";
+	min-height: 100vh;
 }
 .main{
 	grid-area: main;
