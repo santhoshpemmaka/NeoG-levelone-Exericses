@@ -6,8 +6,9 @@ const ShowPassword = () => {
 	const [valuePassword, setvaluePassword] = useState("");
 	const [shownPassword, setshownPassword] = useState(false);
 	const iconHandler = () => {
-		setshownPassword(!shownPassword);
+		setshownPassword((prev) => !prev);
 	};
+
 	return (
 		<div>
 			<div className='form-label'>
@@ -31,6 +32,7 @@ const ShowPassword = () => {
 				/>
 				{shownPassword ? (
 					<i
+						onClick={iconHandler}
 						class='fas fa-eye-slash'
 						style={{
 							position: "absolute",

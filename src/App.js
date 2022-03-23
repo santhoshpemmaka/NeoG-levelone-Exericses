@@ -16,12 +16,13 @@ import "./App.scss";
 // import TodoList from "./TodoList/TodoList";
 // import DarkMode from "./DarkMode/DarkMode";
 // import UseEffect from "./Pratice/UseEffect";
+import UseCustomAxios from "./UseCustomAxios/UseCustomAxios";
 import PraticeSaas from "./PraticeSaas/PraticeSaas";
 
 function App() {
 	return (
 		<div className='App'>
-			<PraticeSaas />
+			<UseCustomAxios />
 		</div>
 	);
 }
