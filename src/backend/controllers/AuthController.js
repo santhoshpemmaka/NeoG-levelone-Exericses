@@ -77,15 +77,15 @@ export const loginHandler = function (schema, request) {
       foundUser.password = undefined;
       return new Response(200, {}, { foundUser, encodedToken });
     }
-    new Response(
-      401,
-      {},
-      {
-        errors: [
-          "The credentials you entered are invalid. Unauthorized access error.",
-        ],
-      }
-    );
+    return new Response(
+			401,
+			{},
+			{
+				errors: [
+					"The credentials you entered are invalid. Unauthorized access error.",
+				],
+			}
+		);
   } catch (error) {
     return new Response(
       500,
